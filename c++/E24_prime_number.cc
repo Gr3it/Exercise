@@ -7,7 +7,7 @@ int main()
 {
   int n;
   bool flag=true;
-  cout << "inserire un numero tra 0 e 1000 per verificare se sia vero: ";
+  cout << "inserire un numero tra 0 e 1000 per verificare se sia primo: ";
   cin >> n;
 
   for (int i=2;i<sqrt(n) && flag ;i++){
