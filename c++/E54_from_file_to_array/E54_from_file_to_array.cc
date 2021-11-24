@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
   }
 
   fstream file;
-  char buffer[256];
+
   file.open(argv[1],ios::in);
 
   float *array=new float[atoi(argv[2])];
@@ -33,8 +33,7 @@ int main(int argc, char *argv[])
     cout << "errore con l'apertura del file" << endl;
   }else{
     for(int i = 0; i < atoi(argv[2]); i++){
-      file >> buffer;
-      array[i]=atof(buffer);
+      file >> array[i];
     }
   }
 
